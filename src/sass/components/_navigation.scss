@@ -1,0 +1,32 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  
+  
+  &__list {
+    display: flex;
+    list-style: none;
+
+    @include media(large) {
+      display: none;
+    }
+  }
+
+  &__item {
+
+  }
+
+  &__link {
+    padding: 1rem;
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.24px;
+  }
+}
+
+.nav-scroll {
+  background: black;
+}

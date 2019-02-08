@@ -7,6 +7,10 @@
 @import 'base/base';
 @import 'base/typography';
 
-@import 'layout/layout';
 
-// @import 'components/componenet';
+@import 'components/header';
+@import 'components/hamburger';
+@import 'components/navigation';
+@import 'components/button';
+@import 'components/hero';
+@import 'components/about';
