@@ -19,6 +19,7 @@
     display: none;
     // background: url(../../img/Shade.png) 120% 0%;
     margin-left: -12rem;
+    z-index: 5;
 
     @include media(mega) {
       display: block;
@@ -32,7 +33,7 @@
     &::after {
       content: "";
       background: url(../../img/Shade.png);
-      opacity: .5;
+      opacity: .4;
       top: 0;
       left: -450px;
       bottom: 0;

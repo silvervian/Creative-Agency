@@ -1,0 +1,66 @@
+.services {
+  padding: 9rem 1rem;
+  background: url(../../img/Rectangle_2.png) no-repeat left center;
+  background-color: #f5f5f5;
+  
+  @include media(small) {
+    background: none;
+  }
+
+  &__inner {
+    margin: 0 auto;
+    display: flex;
+    max-width: 120rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__box {
+    padding: 2rem 0;
+    display: flex;
+
+    @include media(small) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    width: 75px;
+    height: 75px;
+    background-color: #bc2e3a;
+    border-radius: 50%;
+  }
+
+  &__icon {
+
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+
+    @include media(small) {
+      align-items: center;
+    }
+  }
+
+  &__desc {
+    margin-top: 1rem;
+    max-width: 30rem;
+    color: #6a6a6a;
+    font-family: $sans;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 30px;
+    hyphens: auto;
+
+    @include media(small) {
+      text-align: center;
+    }
+  }
+}

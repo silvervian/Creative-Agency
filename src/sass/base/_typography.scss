@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Lato:400,700|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Lato:400,700|Open+Sans:400,500,700');
 @import url('https://use.fontawesome.com/releases/v5.7.1/css/all.css');
 
 $lato: 'Lato', sans-serif;
@@ -23,21 +23,53 @@ body {
   line-height: 15rem;
   text-transform: uppercase;
   letter-spacing: .5rem;
+  line-height: 14rem;
+
+  @include media(medium) {
+    font-size: 9.9rem;
+    line-height: 9rem;
+  }
   
   @include media(small) {
-    font-size: 10.9rem;
+    font-size: 5.9rem;
+    line-height: 6rem;
   }
-
+  
   &__small {
     font-size: 9.9rem;
     line-height: 8rem;
+
+    @include media(medium) {
+      font-size: 7.9rem;
+      line-height: 6rem;
+    }
+    
+    @include media(small) {
+      font-size: 4.9rem;
+      line-height: 5rem;
+    }
   }
 }
 
 .secondary {
+  color: #494949;
+  font-family: $anton;
+  font-size: 6.2rem;
+  font-weight: 400;
+  
+  @include media(small) {
+    font-size: 4.2rem;
+  }
 
+  &--center {
+    text-align: center;
+  }
 }
 
 .tertiary {
-
+  color: #6f6f6e;
+  font-family: $sans;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -1.82px;
 }

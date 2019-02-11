@@ -1,34 +1,56 @@
 .about {
+  background: url(../../img/Rectangle_3.png) no-repeat right;
   padding: 7rem 0;
   color: #494949;
   font-family: $anton;
   font-size: 62px;
   font-weight: 400;
   
+  @include media(large) {
+    background: none;
+  }
+  
   &__inner {
     padding: 0 1rem;
     margin: 0 auto;
-    width: 120rem;
+    max-width: 120rem;
     display: flex;
+    align-items: center;
 
+    @include media(large) {
+      justify-content: center;
+    }
   }
 
   &__info {
     display: flex;
     flex-direction: column;
-    align-items: center;
+
+    @include media(large) {
+      align-items: center;
+    }
   }
 
   &__desc {
+    padding: 7rem 0;
+    max-width: 471px;
     color: #6a6a6a;
-    font-family: "Open Sans";
+    font-family: $sans;
     font-size: 17px;
     font-weight: 400;
     line-height: 30px;
+    
+    @include media(large) {
+      text-align: center;
+    }
   }
 
   &__img {
-    width: 497px;
-    height: 321px;
+    max-width: 757px;
+    height: 422px;
+
+    @include media(wide) {
+      display: none;
+    }
   }
 }
