@@ -1,4 +1,91 @@
 .team {
+  position: relative;
   padding: 10rem 1rem;
   background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: -173.5px;
+    width: 173px;
+    height: 347px;
+    background: url(../../img/Rectangle_4.png) no-repeat;
+
+    @include media(large) {
+      display: none;
+    }
+  }
+
+  &__member {
+    display: flex;
+    position: relative;
+    margin: 11rem 2.5rem 0; 
+    max-width: 438px;
+    height: 438px;
+    transform: translate(50% 50%);
+    z-index: 3;
+ 
+    @include media(small) {
+      margin-left: -5rem; 
+    }
+    
+    &::before {
+      position: absolute;
+      content: '';
+      background: #ffff;
+      top: 0; left: 0;
+      width: 438px;
+      height: 438px;
+      transform: scale(1.1);
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+      z-index: 2;
+      box-shadow: 10px 10px 10px rgba(0,0,0,.9);
+    }
+  }
+  
+  &__img {
+    position: relative;
+    width: 438px;
+    height: 438px;
+    object-fit: cover;
+    box-shadow: 1px 1px 30px rgba(0,0,0,.9);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    z-index: 3;
+  }
+
+  &__name {
+    text-align: center;
+    color: #ffffff;
+    font-family: $sans;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 39.43px;
+    position: absolute;
+    bottom: 2rem; left: 50%;
+    width: 273px;
+    height: 49px;
+    background: #252525;
+    transform: translate(-50%, 0%);
+    clip-path: polygon(0 0, 80% 0, 100% 100%, 20% 100%);
+    z-index: 3;
+  }
+
+  &__rank {
+    padding: 0 3rem;
+    position: absolute;
+    bottom: -.5rem; left: 50%;
+    background-color: #bc2e3a;
+    color: #ffffff;
+    font-family: $sans;
+    font-size: 1.9rem;
+    font-style: italic;
+    line-height: 31.97px;
+    transform: translate(-50%, 0%);
+    clip-path: polygon(0 0, 80% 0, 100% 100%, 20% 100%);
+    z-index: 5;
+  }
 }

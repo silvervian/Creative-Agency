@@ -1,16 +1,16 @@
 import mobileMenu from './mobileMenu';
 import navScroll from './navScroll';
+import smoothScroll from './smoothScroll';
 
 mobileMenu();
 navScroll();
+smoothScroll();
 
-// Smooth transition between anchors
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
+$(document).ready(() => {
+  $('.slick-slider').slick({
+    arrows: false,
+    autoplay: true,
+    slidesToShow: 1,
+    variableWidth: true
   });
 });

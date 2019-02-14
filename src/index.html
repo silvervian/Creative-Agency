@@ -7,6 +7,7 @@
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Agency Creative</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -161,7 +162,7 @@
   <section class="works">
     <div class="works__inner">
       <h2 class="secondary">How we works</h2>
-      <div class="works-wrapper">
+      <div class="works__wrapper">
         <div class="works__info">
           <div class="works__desc">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Sed ut
@@ -172,15 +173,35 @@
 
         <div class="work__wrapper">
 
-          <div class="work__img">
-            <div class="work__number"></div>
+          <div class="work__img work__img--1">
+            <span class="work__number">1.</span>
             <div class="work__info">
-              <div class="work__title">
-                IDEA
-              </div>
-              <div class="work__desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</div>
+              <span class="work__title">
+                Idea
+              </span>
+              <span class="work__desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</span>
             </div>
           </div>
+          <div class="work__img work__img--2">
+            <span class="work__number">2.</span>
+            <div class="work__info">
+              <span class="work__title">
+                Design
+              </span>
+              <span class="work__desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</span>
+            </div>
+          </div>
+          <div class="work__img work__img--3">
+            <span class="work__number">3.</span>
+            <div class="work__info">
+              <span class="work__title">
+                Output
+              </span>
+              <span class="work__desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</span>
+            </div>
+          </div>
+
+
 
         </div>
       </div>
@@ -190,10 +211,44 @@
 
 
   <section class="team">
-    <h2 class="secondary">Our creative team</h2>
+    <h2 class="secondary secondary--center">Our creative team</h2>
+
+    <div class="slider-wrapper">
+      <div class="slick-slider">
+        <div class="team__member">
+          <img src="img/member1.jpg" class="team__img">
+          <div class="team__name">Jessi Rogers</div>
+          <div class="team__rank">Developer</div>
+        </div>
+        <div class="team__member">
+          <img src="img/member2.jpg" class="team__img">
+          <div class="team__name">Aletta Ocean</div>
+          <div class="team__rank">Designer</div>
+        </div>
+        <div class="team__member">
+          <img src="img/member3.jpg" class="team__img">
+          <div class="team__name">Jimmy Doe</div>
+          <div class="team__rank">Engineer</div>
+        </div>
+        <div class="team__member">
+          <img src="img/member4.jpg" class="team__img">
+          <div class="team__name">Jimmy Doe</div>
+          <div class="team__rank">Designer</div>
+        </div>
+        <div class="team__member">
+          <img src="img/member5.jpg" class="team__img">
+          <div class="team__name">Audrey Bitoni</div>
+          <div class="team__rank">Designer</div>
+        </div>
+      </div>
+    </div>
+
   </section>
 
-
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
   <script src="./js/app.js"></script>
 </body>
 
