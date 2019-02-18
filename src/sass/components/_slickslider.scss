@@ -1,9 +1,19 @@
-.slider-wrapper {
+.slick-slider {
   width: 100%;
 }
 
 .slick-slider {
-  position: relative;
-  margin: 0 auto;
-  overflow: hidden; 
+  // position: relative;
+  // margin: 0 auto;
+  // overflow-y: hidden; 
+}
+
+.slick-current {
+  transform: scale(1.1) translateY(-17px);
+  // z-index: 11;
+  transition: .2s;
+
+  & * {
+    filter: grayscale(0) blur(0);
+  }
 }

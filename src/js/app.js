@@ -8,9 +8,17 @@ smoothScroll();
 
 $(document).ready(() => {
   $('.slick-slider').slick({
+    centerMode: true,
     arrows: false,
-    autoplay: true,
-    slidesToShow: 1,
+    // autoplay: true,
+    // centerPadding: '60px',
+    slidesToShow: 3,
     variableWidth: true
+    // responsive: [
+    //   {
+    //     breakpoint: 600,
+    //     settings: unslick
+    //   }
+    // ]
   });
 });
