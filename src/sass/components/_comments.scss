@@ -1,0 +1,103 @@
+.comments {
+  position: relative;
+  padding: 6rem 0;
+  background: url(../../img/Rectangle_6.png) no-repeat top right;
+  overflow: hidden;
+  
+  @include media(medium) {
+    background: none;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 482px;
+    height: 965px;
+    background: url(../../img/Rectangle_5.png) no-repeat;
+    z-index: -1;
+
+    @include media(small) {
+      display: none;
+    }
+  }
+
+  &__inner {
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 120rem;
+  }
+}
+
+.comment {
+  padding: 7rem 0;
+  display: flex;
+  align-items: center;
+  
+  @include media(medium) {
+    flex-direction: column;
+  }
+
+  &__photo {
+    padding: 2rem 6rem;
+
+    & * {
+      filter: grayscale(0) blur(0);
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    @include media(medium) {
+      align-items: center;
+    }
+  }
+
+  &__desc {
+    margin-left: 7rem;
+    position: relative;
+    max-width: 657px;
+    color: #6a6a6a;
+    font-family: "Open Sans";
+    font-size: 2rem;
+    font-style: italic;
+    line-height: 3rem;
+    
+    @include media(medium) {
+      text-align: center;
+      margin-top: 3rem;
+      margin-left: 0;
+      max-width: 90%;
+    }
+
+    &::before {
+      position: absolute;
+      left: -10rem;
+      content: '';
+      background: url(../../img/cudzy.png) no-repeat;
+      width: 75px;
+      height: 54px;
+
+      @include media(medium) {
+        display: none;
+      }
+    }
+  }
+
+  &__name {
+    padding: 3rem 0rem 0rem 7rem;
+    color: #6a6a6a;
+    font-family: "Open Sans";
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 3rem;
+    
+    @include media(medium) {
+      margin-left: 0;
+      padding: 3rem 0rem 0rem 0rem;
+    }
+  }
+}

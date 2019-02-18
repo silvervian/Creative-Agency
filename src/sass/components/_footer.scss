@@ -1,0 +1,63 @@
+.footer {
+  position: relative;
+  width: 100%;
+  padding: 8rem 0;
+  background: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.9)), url(../../img/footer-bg.jpg) no-repeat center / cover;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0; right: 0;
+    width: 288px;
+    height: 160px;
+    background: url(../../img/Rectangle_7.png) no-repeat bottom right;
+    
+    @include media(small) {
+      background: none;
+    }
+  }
+}
+
+.foo-contact {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 120rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__box {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: 6rem 20rem;
+    grid-gap: 1rem;
+    align-items: center;
+  }
+
+  &__icon {
+    grid-row: 1 / span 2;
+    justify-self: center;
+  }
+
+  &__title {
+    color: #ffffff;
+    font-family: $sans;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    /* Text style for "E, mail" */
+    letter-spacing: 0.55px;
+    align-self: end;
+  }
+
+  &__desc {
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    /* Text style for "f, ree@psd" */
+    letter-spacing: 0.42px;
+  }
+}
+

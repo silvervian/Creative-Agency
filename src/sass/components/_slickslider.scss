@@ -3,15 +3,21 @@
 }
 
 .slick-slider {
+  transition: .2s;
+}
+
+.slick-slider {
   // position: relative;
   // margin: 0 auto;
   // overflow-y: hidden; 
 }
 
-.slick-current {
+.slick-center {
   transform: scale(1.1) translateY(-17px);
+  transition: transform .3s ease-in;
+  will-change: transform;
   // z-index: 11;
-  transition: .2s;
+  
 
   & * {
     filter: grayscale(0) blur(0);
