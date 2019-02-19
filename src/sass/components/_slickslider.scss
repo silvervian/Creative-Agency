@@ -2,8 +2,9 @@
   width: 100%;
 }
 
-.slick-slider {
-  transition: .2s;
+.slick-slide {
+  transition: transform .3s ease-in;
+  will-change: transform;
 }
 
 .slick-slider {
