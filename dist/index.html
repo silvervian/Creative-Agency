@@ -15,28 +15,28 @@
 
   <div class="menu-mobile">
     <ul class="menu-mobile__list">
-      <li class="menu-mobile__link"><a class="menu-mobile__link" href="#">Home</a></li>
-      <li class="menu-mobile__link"><a class="menu-mobile__link" href="#">About Us</a></li>
-      <li class="menu-mobile__link"><a class="menu-mobile__link" href="#">Team</a></li>
-      <li class="menu-mobile__link"><a class="menu-mobile__link" href="#">Services</a></li>
-      <li class="menu-mobile__link"><a class="menu-mobile__link" href="#">Process</a></li>
-      <li class="menu-mobile__link"><a class="menu-mobile__link" href="#">Clients</a></li>
-      <li class="menu-mobile__link"><a class="menu-mobile__link" href="#">Work</a></li>
+      <li class="menu-mobile__item"><a class="menu-mobile__link menu-mobile__link--active" href="#home">Home</a></li>
+      <li class="menu-mobile__item"><a class="menu-mobile__link" href="#about">About Us</a></li>
+      <li class="menu-mobile__item"><a class="menu-mobile__link" href="#team">Team</a></li>
+      <li class="menu-mobile__item"><a class="menu-mobile__link" href="#services">Services</a></li>
+      <li class="menu-mobile__item"><a class="menu-mobile__link" href="#process">Process</a></li>
+      <li class="menu-mobile__item"><a class="menu-mobile__link" href="#clients">Clients</a></li>
+      <li class="menu-mobile__item"><a class="menu-mobile__link" href="#">Work</a></li>
     </ul>
   </div>
 
   <header class="header">
 
-    <a href="#" class="header__logo">Agency</a>
+    <a href="#home" class="header__logo">Agency</a>
 
     <nav class="navigation">
       <ul class="navigation__list">
-        <li class="navigation__item"><a class="navigation__link" href="#">Home</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="#">About Us</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="#">Team</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="#">Services</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="#">Process</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="#">Clients</a></li>
+        <li class="navigation__item"><a class="navigation__link navigation__link--active" href="#home">Home</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#about">About Us</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#team">Team</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#services">Services</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#process">Process</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#clients">Clients</a></li>
         <li class="navigation__item"><a class="navigation__link" href="#">Work</a></li>
       </ul>
       <div class="header__icons">
@@ -55,7 +55,7 @@
 
   </header>
 
-  <section class="hero">
+  <section id="home" data-scroll class="hero">
     <div class="hero__wrapper">
       <h1 class="primary hero__title">think
         outside <span class="primary primary__small">of the box</span>
@@ -67,7 +67,7 @@
     </div>
   </section> <!-- .hero -->
 
-  <section class="about">
+  <section id="about" data-scroll class="about">
     <div class="about__inner">
       <div class="about__info">
         <h2 class="secondary">Who we are</h2>
@@ -80,7 +80,7 @@
     </div>
   </section> <!-- .about -->
 
-  <section class="services">
+  <section id="services" data-scroll class="services">
     <h1 class="secondary secondary--center">What we do</h1>
     <div class="services__inner">
 
@@ -159,7 +159,7 @@
     </div>
   </section> <!-- .services -->
 
-  <section class="works">
+  <section id="process" data-scroll class="works">
     <div class="works__inner">
       <h2 class="secondary">How we works</h2>
       <div class="works__wrapper">
@@ -210,7 +210,7 @@
   </section> <!-- .works -->
 
 
-  <section class="team">
+  <section id="team" data-scroll class="team">
     <h2 class="secondary secondary--center">Our creative team</h2>
 
     <div class="slick-slider">
@@ -255,7 +255,7 @@
 
   </section> <!-- .team -->
 
-  <section class="comments">
+  <section id="clients" data-scroll class="comments">
     <div class="comments__inner">
       <h2 class="secondary secondary--center">What client says</h2>
       <div class="comment">

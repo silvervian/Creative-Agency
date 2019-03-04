@@ -24,6 +24,11 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.24px;
+    transition: .2s;
+    
+    &--active {
+      border-bottom: 2px solid white;
+    }
   }
 }
 

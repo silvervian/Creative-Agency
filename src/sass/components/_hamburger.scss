@@ -94,8 +94,7 @@
     letter-spacing: 0.24px;
 
   &--active, &:hover {
-      font-weight: 700;
-      color: #ffe13e;
+    border-bottom: 2px solid white;
   }
 }
 
@@ -105,7 +104,7 @@
   }
 }
 
-.stop-scrolling {
-  height: 100%;
-  overflow: hidden;
-}
+// .stop-scrolling {
+//   height: 100%;
+//   overflow: hidden;
+// }
